@@ -1,11 +1,14 @@
 import React from "react";
+import HookedLogo from "../../components/HookedLogo";
 
 const LoginHeader = () => {
     return (
-        <div className="border-2 border-yellow-600">
-            <div className="text-5xl text-yellow-400 font-bold relative">
-                Hooked
-            </div>
+        <div
+            className="border-white border-
+                        flex justify-center
+                        py-3 px-2"
+        >
+            <HookedLogo className={"sm:text-6xl text-5xl "} />
         </div>
     );
 };
