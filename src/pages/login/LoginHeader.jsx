@@ -8,7 +8,7 @@ const LoginHeader = () => {
                         flex justify-center
                         py-3 px-2"
         >
-            <HookedLogo className={"sm:text-6xl text-5xl "} />
+            <HookedLogo className={"md:text-6xl text-5xl "} />
         </div>
     );
 };
