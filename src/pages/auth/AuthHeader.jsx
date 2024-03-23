@@ -1,7 +1,7 @@
 import React from "react";
 import HookedLogo from "../../components/HookedLogo";
 
-const LoginHeader = () => {
+const AuthHeader = () => {
     return (
         <div
             className="border-white border-
@@ -13,4 +13,4 @@ const LoginHeader = () => {
     );
 };
 
-export default LoginHeader;
+export default AuthHeader;
