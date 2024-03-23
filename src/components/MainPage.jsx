@@ -5,8 +5,10 @@ const MainPage = ({ className, children, backgroundImageURL = null }) => {
     return (
         <div
             className={`
-             w-full h-full
+             w-full
             background-images
+            bg-black
+            flex flex-col
             ${className}`}
         >
             {backgroundImageURL && (
