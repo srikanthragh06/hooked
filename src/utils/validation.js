@@ -1,5 +1,7 @@
-export const validateEmail = (email) => {
+export const validateEmail = (email, optional = false) => {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!optional && !email) return "Missing Email Address";
 
     if (!pattern.test(email)) {
         return "Invalid email format. Please enter a valid email address.";
@@ -8,7 +10,9 @@ export const validateEmail = (email) => {
     }
 };
 
-export const validatePassword = (password) => {
+export const validatePassword = (password, optional = false) => {
+    if (!optional && !password) return "Missing password";
+
     if (!(password.length >= 8 && password.length <= 32)) {
         return "Password must be between 8 and 32 characters long.";
     } else {
